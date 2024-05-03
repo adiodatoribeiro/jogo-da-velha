@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="eachSide"></div>
+    <div class="eachSide">
+        <h1>#Jogo da Velha#</h1>
+        <div id="game">
+            <div class="row">
+                <div class="cell" id="cell-0" onclick="handleClick(0)"></div>
+                <div class="cell" id="cell-1" onclick="handleClick(1)"></div>
+                <div class="cell" id="cell-2" onclick="handleClick(2)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-3" onclick="handleClick(3)"></div>
+                <div class="cell" id="cell-4" onclick="handleClick(4)"></div>
+                <div class="cell" id="cell-5" onclick="handleClick(5)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-6" onclick="handleClick(6)"></div>
+                <div class="cell" id="cell-7" onclick="handleClick(7)"></div>
+                <div class="cell" id="cell-8" onclick="handleClick(8)"></div>
+            </div>
+        </div>
+        <div id="status"></div>
+        <button class="resetButton" onclick="resetGame()">Reiniciar</button>
+    </div>
+    <div class="eachSide">
+        <h2>Placar:</h2>
+        <ul id="winnerHistory"></ul>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
